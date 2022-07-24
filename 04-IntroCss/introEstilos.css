@@ -1,0 +1,32 @@
+.colores {
+    color:red;
+}
+.colorHexadecimal {
+    color:#87CBAC;
+}
+.rgb {
+    color:rgb(77, 172, 22);
+}
+.rgba {
+    color:rgba(10,20, 15,1);
+}
+.fondo {
+    background-color: blueviolet;
+    background-image:url("imagenes/fondo.jpg")
+}
+/* Tamaños*/
+.ancho{
+    background-color: #87CBAC;
+    width: 100px;
+}
+.alto {
+    background-color:red;
+    height: 200px;
+    width: 300px;
+}
+.tarjeta {
+    border-style: solid;
+    border-color: rgb(150,150,150);
+    border-width: 1px;
+    padding: 15px 15px 15px 40px;
+}
