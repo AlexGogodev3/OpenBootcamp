@@ -1,0 +1,30 @@
+div{
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+/*static es la posicion por defecto de los contenedores*/
+.relative{
+    position: relative;
+    left: 80px;/*se separa 80 px de la izquierda en cuanto a su posición static por defecto*/
+    margin-left: 10px;/*margen de 10 px en relación a su posición por defecto*/
+}
+.fixed{
+    position: fixed;/*posiciona de manera fija ,en donde lo coloquemos aunque movamos la pantalla*/
+    bottom: 0px;
+    left: 0px;
+    background-color: greenyellow;
+    z-index: 10;
+}
+.absolute{
+    position: absolute;/*toma como referncia el elemento padre (en este caso el body)*/
+    top: 40px;
+
+}
+.sticky{
+    position: sticky;/*Esta donde lo coloquemos , y segun donde le digamos se queda ahi con el scroll*/    background-color: brown;
+    color: white;
+    bottom: 0px;
+    z-index: 2;
+}
