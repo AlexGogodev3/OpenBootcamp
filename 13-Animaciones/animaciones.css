@@ -7,9 +7,34 @@
     width: 50%;
     height: 50%;
     background-color: beige;
-    transition:transform 1s ease-in 2s;
+    /*transition:transform 1s ease-in 2s;*/
+    animation:traslacion 4s infinite forwards;/*podemos ponerle el nombre que queramos a la variable "traslacion"*/
 }
 .padre:hover .hijo{
-    transform: translateX(100%);
-    background-color: blueviolet;
+   /* transform: translateX(100%);
+    background-color: blueviolet; */
+    animation-play-state: paused;
+    
+}
+@keyframes traslacion {/*utilizamos los keyframes para darle utilidad a la variable creada en animation*/
+    0%{
+        background-color:beige;
+        transform: translateX(0%);
+    }
+    25%{
+        background-color: beige;
+        transform: translateX(100%);
+    }
+    50%{
+        background-color:darkorange;
+        transform: translateX(100%) translateY(100%);
+    }
+    75%{
+        background-color: darkorange;
+        transform: translateX(0%) translateY(100%);
+    }
+    100%{
+        background-color: beige;
+        transform: translateX(0%) translateY(0%);
+    }
 }
