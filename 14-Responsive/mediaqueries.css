@@ -1,0 +1,28 @@
+h1{
+    color: red;
+    font-size: 2rem;
+}
+p{
+    color: black;
+    font-size: 2rem;
+}
+@media  (min-width:476px){
+    h1{
+        color: blue;
+    }
+}
+@media (min-width:660px){
+    h1{
+        color: green;
+    }
+}
+@media(min-height:300px){
+    p{
+        color: cyan;
+    }
+}
+@media (orientation: landscape) and (min-height:400px){/*cambia el color cuando tenemos una pantalla horizontal*/
+    p{
+        color:brown;
+    }
+}
